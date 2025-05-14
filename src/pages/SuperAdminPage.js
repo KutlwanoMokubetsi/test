@@ -24,7 +24,7 @@ const SuperAdminPage = () => {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [API_BASE]);
 
   // ✅ Reusable handler for assign/revoke
   const updateUserRoles = async (userId, endpoint) => {
