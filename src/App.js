@@ -9,6 +9,7 @@ import {
 
 import RoleRedirect from "./pages/RoleRedirect";
 import AdminPage from "./pages/AdminPage";
+import HomePage from "./pages/HomePage";
 import SuperAdminPage from "./pages/SuperAdminPage";
 import SearchPage from "./pages/SearchPage";
 import Navbar from "./components/Navbar";
@@ -31,6 +32,7 @@ function App() {
 
             {/* Public */}
             <Route path="/search" element={<SearchPage />} />
+            <Route path="/home" element={<HomePage />} />
             <Route path="/api-docs" element={<APIDocumentation />} />
             <Route path="/login" element={<Login />} />
             <Route path="/unauthorized" element={<Unauthorized />} />
