@@ -11,7 +11,7 @@ const SuperAdminPage = () => {
   const [loading, setLoading] = useState(true);
   const [actionLoading, setActionLoading] = useState({});
 
-  const API_BASE = 'https://constitutional-access-backend.azurewebsites.net/';
+  const API_BASE = process.env.REACT_APP_API_BASE_URL;
 
   // ✅ Fetch users with roles
   const fetchUsers = useCallback(async () => {
